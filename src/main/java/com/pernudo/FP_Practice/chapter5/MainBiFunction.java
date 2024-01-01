@@ -31,6 +31,7 @@ public class MainBiFunction {
         return biFunction.apply(value1, value2);
     }
 
+    @SuppressWarnings("SameParameterValue")
     private static <T, U, R, P> P usingBiFunctionAndThen(BiFunction<T, U, R> biFunction,
                                                          Function<R, P> function,
                                                          T value1, U value2){
