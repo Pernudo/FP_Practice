@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Jean-Luc Picard",
+    "age": 59,
+    "rank": "Captain",
+    "division": "Command"
+  },
+  {
+    "name": "Spock",
+    "age": 147,
+    "rank": "Commander",
+    "division": "Science"
+  },
+  {
+    "name": "James T. Kirk",
+    "age": 34,
+    "rank": "Captain",
+    "division": "Command"
+  },
+  {
+    "name": "Data",
+    "age": 39,
+    "rank": "Lieutenant Commander",
+    "division": "Science"
+  },
+  {
+    "name": "Kathryn Janeway",
+    "age": 54,
+    "rank": "Captain",
+    "division": "Command"
+  },
+  {
+    "name": "Leonard McCoy",
+    "age": 47,
+    "rank": "Commander",
+    "division": "Medical"
+  },
+  {
+    "name": "Worf",
+    "age": 43,
+    "rank": "Lieutenant Commander",
+    "division": "Security"
+  },
+  {
+    "name": "William Riker",
+    "age": 35,
+    "rank": "Commander",
+    "division": "Command"
+  },
+  {
+    "name": "B'Elanna Torres",
+    "age": 32,
+    "rank": "Lieutenant",
+    "division": "Engineering"
+  },
+  {
+    "name": "Benjamin Sisko",
+    "age": 43,
+    "rank": "Captain",
+    "division": "Command"
+  },
+  {
+    "name": "Jadzia Dax",
+    "age": 28,
+    "rank": "Lieutenant Commander",
+    "division": "Science"
+  },
+  {
+    "name": "Geordi La Forge",
+    "age": 36,
+    "rank": "Lieutenant Commander",
+    "division": "Engineering"
+  },
+  {
+    "name": "Hikaru Sulu",
+    "age": 39,
+    "rank": "Commander",
+    "division": "Command"
+  },
+  {
+    "name": "Tuvok",
+    "age": 107,
+    "rank": "Lieutenant Commander",
+    "division": "Security"
+  },
+  {
+    "name": "Deanna Troi",
+    "age": 35,
+    "rank": "Lieutenant Commander",
+    "division": "Counselor"
+  },
+  {
+    "name": "Nyota Uhura",
+    "age": 32,
+    "rank": "Lieutenant",
+    "division": "Command"
+  },
+  {
+    "name": "Seven of Nine",
+    "age": 29,
+    "rank": "Civilian",
+    "division": "Science"
+  },
+  {
+    "name": "Christine Chapel",
+    "age": 30,
+    "rank": "Lieutenant",
+    "division": "Medical"
+  },
+  {
+    "name": "Pavel Chekov",
+    "age": 22,
+    "rank": "Ensign",
+    "division": "Command"
+  },
+  {
+    "name": "Miles O'Brien",
+    "age": 46,
+    "rank": "Chief Petty Officer",
+    "division": "Engineering"
+  },
+  {
+    "name": "Guinan",
+    "age": 500,
+    "rank": "Civilian",
+    "division": "Bartender"
+  },
+  {
+    "name": "Ezri Dax",
+    "age": 28,
+    "rank": "Lieutenant",
+    "division": "Counselor"
+  },
+  {
+    "name": "Tasha Yar",
+    "age": 28,
+    "rank": "Lieutenant",
+    "division": "Security"
+  },
+  {
+    "name": "Kes",
+    "age": 3,
+    "rank": "Civilian",
+    "division": "Medical"
+  }
+]

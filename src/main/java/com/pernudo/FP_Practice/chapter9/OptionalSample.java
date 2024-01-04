@@ -4,7 +4,6 @@ import java.util.Optional;
 
 public class OptionalSample {
 
-    @SuppressWarnings("SameParameterValue")
     public static void main (String[] args) throws Exception {
 
         /*
