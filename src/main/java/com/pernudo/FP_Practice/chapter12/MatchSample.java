@@ -12,7 +12,7 @@ public class MatchSample {
     private static final String regexLetter = "[a-zA-Z]{3,}";
 
     public static void main(String[] args) throws Exception {
-        List<Character> lstCharacters = Utils.getCharacters();
+        List<Character> lstCharacters = Utils.getStarTrekCharacters();
 
         var pattern = Pattern.compile(regexLetter);
         Predicate<Character> characterNamePredicate = character -> pattern.matcher(character.getName()).find();

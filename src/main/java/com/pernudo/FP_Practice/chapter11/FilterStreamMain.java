@@ -8,11 +8,11 @@ import java.util.List;
 
 public class FilterStreamMain {
     public static void main(String[] args) throws Exception {
-        List<Character> lstCharacters = Utils.getCharacters();
+        List<Character> lstCharacters = Utils.getStarTrekCharacters();
         lstCharacters.forEach(System.out::println);
 
         //Eliminar duplicados
-        lstCharacters.addAll(Utils.getCharacters());
+        lstCharacters.addAll(Utils.getStarTrekCharacters());
         System.out.println("Tamaño lista CON duplicados: " + lstCharacters.size());
 
         var lstNew = new ArrayList<Character>();
@@ -20,7 +20,7 @@ public class FilterStreamMain {
         System.out.println("Tamaño lista SIN duplicados: " + lstNew.size());
 
         //Obtener personajes mayores de 50 años
-        lstCharacters = Utils.getCharacters();
+        lstCharacters = Utils.getStarTrekCharacters();
         var count = lstCharacters.stream()
                 .filter(character -> character.age > 50)
                 .peek(System.out::println)

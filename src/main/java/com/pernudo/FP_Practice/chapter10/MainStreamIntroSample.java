@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 public class MainStreamIntroSample {
     public static void main(String[] args) throws Exception {
-        List<Character> lstCharacters = Utils.getCharacters();
+        List<Character> lstCharacters = Utils.getStarTrekCharacters();
         lstCharacters.forEach(System.out::println);
         System.out.println("----------Arrays----------");
         var arrayCharacters = lstCharacters.toArray();

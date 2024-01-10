@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Luke Skywalker",
+    "age": 19,
+    "rank": "Padawan",
+    "division": "Jedi"
+  },
+  {
+    "name": "Darth Vader",
+    "age": 46,
+    "rank": "Sith Lord",
+    "division": "Sith"
+  },
+  {
+    "name": "Princess Leia Organa",
+    "age": 19,
+    "rank": "Princess",
+    "division": "Rebel Alliance"
+  },
+  {
+    "name": "Han Solo",
+    "age": 29,
+    "rank": "Captain",
+    "division": "Rebel Alliance"
+  },
+  {
+    "name": "Obi-Wan Kenobi",
+    "age": 57,
+    "rank": "Jedi Knight",
+    "division": "Jedi"
+  },
+  {
+    "name": "Yoda",
+    "age": 900,
+    "rank": "Jedi Master",
+    "division": "Jedi"
+  },
+  {
+    "name": "R2-D2",
+    "age": 66,
+    "rank": "Astromech Droid",
+    "division": "Rebel Alliance"
+  },
+  {
+    "name": "C-3PO",
+    "age": 32,
+    "rank": "Protocol Droid",
+    "division": "Rebel Alliance"
+  },
+  {
+    "name": "Chewbacca",
+    "age": 200,
+    "rank": "Warrior",
+    "division": "Rebel Alliance"
+  },
+  {
+    "name": "Emperor Palpatine",
+    "age": 86,
+    "rank": "Emperor",
+    "division": "Sith"
+  },
+  {
+    "name": "Lando Calrissian",
+    "age": 31,
+    "rank": "General",
+    "division": "Rebel Alliance"
+  },
+  {
+    "name": "Boba Fett",
+    "age": 32,
+    "rank": "Bounty Hunter",
+    "division": "Independent"
+  },
+  {
+    "name": "Anakin Skywalker",
+    "age": 42,
+    "rank": "Jedi Knight",
+    "division": "Jedi"
+  },
+  {
+    "name": "Mace Windu",
+    "age": 53,
+    "rank": "Jedi Master",
+    "division": "Jedi"
+  },
+  {
+    "name": "Qui-Gon Jinn",
+    "age": 60,
+    "rank": "Jedi Master",
+    "division": "Jedi"
+  },
+  {
+    "name": "Padmé Amidala",
+    "age": 27,
+    "rank": "Queen",
+    "division": "Naboo"
+  },
+  {
+    "name": "Count Dooku",
+    "age": 83,
+    "rank": "Sith Lord",
+    "division": "Sith"
+  },
+  {
+    "name": "Rey",
+    "age": 19,
+    "rank": "Jedi",
+    "division": "Jedi"
+  },
+  {
+    "name": "Finn",
+    "age": 23,
+    "rank": "Soldier",
+    "division": "Rebel Alliance"
+  },
+  {
+    "name": "Poe Dameron",
+    "age": 32,
+    "rank": "Commander",
+    "division": "Rebel Alliance"
+  },
+  {
+    "name": "Kylo Ren",
+    "age": 29,
+    "rank": "Supreme Leader",
+    "division": "First Order"
+  },
+  {
+    "name": "General Hux",
+    "age": 35,
+    "rank": "General",
+    "division": "First Order"
+  },
+  {
+    "name": "Captain Phasma",
+    "age": 39,
+    "rank": "Captain",
+    "division": "First Order"
+  },
+  {
+    "name": "BB-8",
+    "age": 29,
+    "rank": "Astromech Droid",
+    "division": "Rebel Alliance"
+  }
+]

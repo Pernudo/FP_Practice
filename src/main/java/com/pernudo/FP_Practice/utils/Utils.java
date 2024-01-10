@@ -12,9 +12,18 @@ import java.util.List;
 public class Utils {
 
     private static final String jsonStarTrekCharacters = "StarTrekCharacters.json";
+    private static final String jsonStarWarsCharacters = "StarWarsCharacters.json";
 
-    public static List<Character> getCharacters() throws IOException {
-        File file = new ClassPathResource(jsonStarTrekCharacters).getFile();
+    public static List<Character> getStarTrekCharacters() throws IOException {
+        return getCharacters(jsonStarTrekCharacters);
+    }
+
+    public static List<Character> getStarWarsCharacters() throws IOException {
+        return getCharacters(jsonStarWarsCharacters);
+    }
+
+    private static List<Character> getCharacters(String fileName) throws IOException {
+        File file = new ClassPathResource(fileName).getFile();
         ObjectMapper mapper = new ObjectMapper();
         return mapper.readValue(new File(file.getAbsolutePath()),new TypeReference<>() {});
     }
