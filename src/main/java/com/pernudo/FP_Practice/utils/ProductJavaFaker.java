@@ -5,12 +5,15 @@ import com.github.javafaker.Faker;
 import com.pernudo.FP_Practice.pojos.Product;
 
 import java.time.ZoneId;
+import java.util.Locale;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class ProductJavaFaker {
 
-    public static Product createProduct(Commerce productFaker) {
+    private static final Commerce productFaker = new Faker(new Locale("es", "ES")).commerce();
+
+    public static Product createProduct() {
         var date = Faker.instance(new Random())
                 .date()
                 .future(1000, TimeUnit.DAYS)
