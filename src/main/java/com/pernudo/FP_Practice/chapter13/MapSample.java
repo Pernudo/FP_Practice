@@ -1,7 +1,7 @@
 package com.pernudo.FP_Practice.chapter13;
 
-import com.pernudo.FP_Practice.chapter10.Character;
-import com.pernudo.FP_Practice.utils.Utils;
+import com.pernudo.FP_Practice.pojos.Character;
+import com.pernudo.FP_Practice.utils.CharactersFromJson;
 
 import java.io.IOException;
 import java.nio.file.FileVisitOption;
@@ -20,8 +20,8 @@ public class MapSample {
 
         //Lista de listas de Characters, la aplanamos e imprimimos.
         var lstComplete = new ArrayList<List<Character>>();
-        lstComplete.add(Utils.getStarTrekCharacters());
-        lstComplete.add(Utils.getStarWarsCharacters());
+        lstComplete.add(CharactersFromJson.getStarTrekCharacters());
+        lstComplete.add(CharactersFromJson.getStarWarsCharacters());
         lstComplete.stream()
                 .flatMap(List::stream)
                 .forEach(System.out::println);

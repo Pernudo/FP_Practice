@@ -1,18 +1,18 @@
 package com.pernudo.FP_Practice.chapter11;
 
-import com.pernudo.FP_Practice.chapter10.Character;
-import com.pernudo.FP_Practice.utils.Utils;
+import com.pernudo.FP_Practice.pojos.Character;
+import com.pernudo.FP_Practice.utils.CharactersFromJson;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class FilterStreamMain {
     public static void main(String[] args) throws Exception {
-        List<Character> lstCharacters = Utils.getStarTrekCharacters();
+        List<Character> lstCharacters = CharactersFromJson.getStarTrekCharacters();
         lstCharacters.forEach(System.out::println);
 
         //Eliminar duplicados
-        lstCharacters.addAll(Utils.getStarTrekCharacters());
+        lstCharacters.addAll(CharactersFromJson.getStarTrekCharacters());
         System.out.println("Tamaño lista CON duplicados: " + lstCharacters.size());
 
         var lstNew = new ArrayList<Character>();
@@ -20,7 +20,7 @@ public class FilterStreamMain {
         System.out.println("Tamaño lista SIN duplicados: " + lstNew.size());
 
         //Obtener personajes mayores de 50 años
-        lstCharacters = Utils.getStarTrekCharacters();
+        lstCharacters = CharactersFromJson.getStarTrekCharacters();
         var count = lstCharacters.stream()
                 .filter(character -> character.age > 50)
                 .peek(System.out::println)
