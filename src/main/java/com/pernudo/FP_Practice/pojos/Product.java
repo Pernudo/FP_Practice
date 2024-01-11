@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product implements Serializable {
+public class Product implements Serializable, Comparable<Product> {
 
     @Serial
     private static final long serialVersionUID = 1L;
@@ -19,4 +19,10 @@ public class Product implements Serializable {
     private float price;
     private LocalDate expirationDate;
 
+    @Override
+    public int compareTo(Product o) {
+        return o.getPrice() == price ?
+                name.compareToIgnoreCase(o.getName()) :
+                Float.compare(o.getPrice(), price); //Descendente. Mayor a menor. Si coincide el precio, ordena por el nombre
+    }
 }
