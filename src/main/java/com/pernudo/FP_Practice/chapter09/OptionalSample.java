@@ -1,10 +1,10 @@
-package com.pernudo.FP_Practice.chapter9;
+package com.pernudo.FP_Practice.chapter09;
 
 import java.util.Optional;
 
 public class OptionalSample {
 
-    public static void main (String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
         /*
          * Ayuda a eliminar NullPointerException
@@ -37,7 +37,7 @@ public class OptionalSample {
 
     public static String resultThrow(String str1, String str2) throws Exception {
         var str2ValueOrElseThrow = Optional.ofNullable(str2)
-                                            .orElseThrow(Exception::new);
+                .orElseThrow(Exception::new);
         return Optional.ofNullable(str1).orElse(str2ValueOrElseThrow);
     }
 

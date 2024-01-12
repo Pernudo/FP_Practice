@@ -18,7 +18,7 @@ public class MainFind {
     public static void main(String[] args) throws Exception {
         var lstProducts = ProductJavaFaker.getList(1000);
 
-        //Si el precio esta entre X eY, el material es Hierro o Plástico
+        //Si el precio está entre X eY, el material es Hierro o Plástico
         Predicate<Product> isValid = getProductPredicate();
 
         System.out.println("Tenemos " + lstProducts.stream()

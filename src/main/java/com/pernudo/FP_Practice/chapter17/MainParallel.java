@@ -16,18 +16,18 @@ public class MainParallel {
     private static long diffSec;
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Cargar los datos? [Y/N]");
+        System.out.println("Cargar los datos? [Y/?]");
 
         if (scanner.nextLine().equalsIgnoreCase(YES)) {
             lstProducts = ProductJavaFaker.getList(100000);
             System.out.println("Datos cargados. Tamaño actual le da lista: " + lstProducts.size());
 
-            System.out.println("Mostrar lo que tarda en realizar las operaciones? [Y/N]");
+            System.out.println("Mostrar lo que tarda en realizar las operaciones? [Y/?]");
             while (scanner.nextLine().equalsIgnoreCase(YES)) {
                 runSec();
                 runPar();
                 System.out.println("Diferencia entre Seq-Par: " + (diffSec - diffPar));
-                System.out.println("Mostrar lo que tarda en realizar las operaciones? [Y/N]");
+                System.out.println("Mostrar lo que tarda en realizar las operaciones? [Y/?]");
             }
         } else {
             System.out.println("Cerrando");

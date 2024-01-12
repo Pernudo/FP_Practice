@@ -1,4 +1,4 @@
-package com.pernudo.FP_Practice.chapter6;
+package com.pernudo.FP_Practice.chapter06;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.function.UnaryOperator;
 
 public class MainUnaryBinaryOperator {
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
         List<String> inmutableList = List.of(" -Juan- ", " -Laura- ", " -Rosa- ", " -Pedro- ", " -Eloy- ");
 
         usingUnaryOperator(String::toUpperCase, inmutableList).forEach(System.out::println);
@@ -24,13 +24,13 @@ public class MainUnaryBinaryOperator {
         System.out.println(binaryOperator2min.apply(1000, 300));
     }
 
-    private static <T> List<T> usingUnaryOperator(UnaryOperator<T> unaryOperator, List<T> list){
+    private static <T> List<T> usingUnaryOperator(UnaryOperator<T> unaryOperator, List<T> list) {
         List<T> newList = new ArrayList<>();
         list.forEach(element -> newList.add(unaryOperator.apply(element)));
         return newList;
     }
 
-    private static <T> List<T> usingUnaryOperatorAndThen(UnaryOperator<T> unaryOperator1, UnaryOperator<T> unaryOperator2, List<T> list){
+    private static <T> List<T> usingUnaryOperatorAndThen(UnaryOperator<T> unaryOperator1, UnaryOperator<T> unaryOperator2, List<T> list) {
         List<T> newList = new ArrayList<>();
         list.forEach(element -> newList.add(unaryOperator1.andThen(unaryOperator2).apply(element)));
         return newList;

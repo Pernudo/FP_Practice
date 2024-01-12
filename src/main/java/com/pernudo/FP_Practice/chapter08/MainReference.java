@@ -1,4 +1,4 @@
-package com.pernudo.FP_Practice.chapter8;
+package com.pernudo.FP_Practice.chapter08;
 
 import java.util.Objects;
 import java.util.function.Predicate;
@@ -6,7 +6,7 @@ import java.util.function.Supplier;
 
 public class MainReference {
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
         /*
          * Formato --> referencia :: nombre del método
@@ -20,9 +20,9 @@ public class MainReference {
         var str = "Marcos";
         var instance = new MainReference();
         Supplier<String> instanceMethod1 = str::toUpperCase;
-        Supplier<String> instanceMethod2 =  instance::getAnything;
-        Supplier<String> instanceMethod3 =  instance::getReferencedMethod;
-        Supplier<MainReference> constructorReference =  MainReference::new;
+        Supplier<String> instanceMethod2 = instance::getAnything;
+        Supplier<String> instanceMethod3 = instance::getReferencedMethod;
+        Supplier<MainReference> constructorReference = MainReference::new;
         Predicate<String> staticMethod = Objects::isNull;
 
         System.out.println(instanceMethod1.get());
@@ -32,11 +32,11 @@ public class MainReference {
         System.out.println(staticMethod.test(null));
     }
 
-    public String getAnything(){
+    public String getAnything() {
         return "Cualquier cosa";
     }
 
-    public String getReferencedMethod(){
+    public String getReferencedMethod() {
         Supplier<String> supplier = this::getAnything;
         return supplier.get().concat(" --> Llamado con this");
     }

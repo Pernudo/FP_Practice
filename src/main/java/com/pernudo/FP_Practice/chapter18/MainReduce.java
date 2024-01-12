@@ -1,4 +1,4 @@
-package com.pernudo.FP_Practice.Chapter18;
+package com.pernudo.FP_Practice.chapter18;
 
 import com.pernudo.FP_Practice.utils.ProductJavaFaker;
 

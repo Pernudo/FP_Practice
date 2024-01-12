@@ -1,4 +1,4 @@
-package com.pernudo.FP_Practice.chapter3;
+package com.pernudo.FP_Practice.chapter03;
 
 public final class HotDog {
 

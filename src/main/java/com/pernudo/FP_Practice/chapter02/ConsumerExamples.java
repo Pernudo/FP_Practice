@@ -1,4 +1,4 @@
-package com.pernudo.FP_Practice.chapter2;
+package com.pernudo.FP_Practice.chapter02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class ConsumerExamples {
 
     static List<Object> lst = new ArrayList<>();
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
         lst.add("Hola Mundo");
         lst.add(64);
         lst.add(true);
@@ -27,10 +27,11 @@ public class ConsumerExamples {
                 ConsumerExamples::printBefore,
                 lst::add,
                 ConsumerExamples::printAfter
-                );
+        );
     }
 
-    @SuppressWarnings({"SameParameterValue", "unused"}) // => Actual value of parameter 'value' is always 'Hola soy un valor del tipo T'
+    @SuppressWarnings({"SameParameterValue", "unused"})
+    // => Actual value of parameter 'value' is always 'Hola soy un valor del tipo T'
     private static <T> void usingConsumer(T value, Consumer<T> consumer, Consumer<T> consumer2, Consumer<T> consumer3) {
         /* noinspection => to suppress warning "Commented out code (n lines)
         consumer.accept(value);
@@ -42,14 +43,15 @@ public class ConsumerExamples {
         consumerCompeted.accept(value);
     }
 
-    @SuppressWarnings("SameParameterValue") // => Actual value of parameter 'value1' is always '4' & 'value2' is always '1000'
+    @SuppressWarnings("SameParameterValue")
+    // => Actual value of parameter 'value1' is always '4' & 'value2' is always '1000'
     private static <T, U> void usingBiConsumer(T value1, U value2, BiConsumer<T, U> biConsumer, BiConsumer<T, U> biConsumer2, BiConsumer<T, U> biConsumer3) {
         biConsumer.andThen(biConsumer2).andThen(biConsumer3).accept(value1, value2);
     }
 
     @SuppressWarnings("unused")
     private static <T> void printList(T value) {
-        System.out.println("Se añadió a la lista el valor: "+value+" -- Total de valores de la lista:");
+        System.out.println("Se añadió a la lista el valor: " + value + " -- Total de valores de la lista:");
         lst.forEach(System.out::println);
     }
 

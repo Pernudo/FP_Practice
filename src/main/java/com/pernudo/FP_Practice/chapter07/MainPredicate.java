@@ -1,12 +1,12 @@
-package com.pernudo.FP_Practice.chapter7;
+package com.pernudo.FP_Practice.chapter07;
 
-import java.util.function.Predicate;
 import java.util.function.BiPredicate;
+import java.util.function.Predicate;
 
 public class MainPredicate {
 
     @SuppressWarnings("unused")
-    public static void main (String[] args){
+    public static void main(String[] args) {
         Predicate<Object> isString = e -> e instanceof String;
         var resultPredicate = usingPredicate(isString, "Hola") ? "Es un String" : "No es un String";
         System.out.println(resultPredicate);
@@ -23,18 +23,18 @@ public class MainPredicate {
     }
 
     @SuppressWarnings("SameParameterValue")
-    private static <T> boolean usingPredicate(Predicate<T> predicate, T value){
+    private static <T> boolean usingPredicate(Predicate<T> predicate, T value) {
         return predicate.test(value);
     }
 
     @SuppressWarnings("SameParameterValue")
     private static <T> boolean usingPredicates(Predicate<T> predicate,
                                                Predicate<T> predicateAnd,
-                                               Predicate<T> predicateOr,T value){
+                                               Predicate<T> predicateOr, T value) {
         return predicate.and(predicateAnd).or(predicateOr).test(value);
     }
 
-    public static boolean isGreater(Integer greater, Integer less){
+    public static boolean isGreater(Integer greater, Integer less) {
         return greater > less;
     }
 

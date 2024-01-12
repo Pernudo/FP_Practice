@@ -1,4 +1,4 @@
-package com.pernudo.FP_Practice.chapter1;
+package com.pernudo.FP_Practice.chapter01;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
 
 public class MainFIExamples {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         comparatorExample();
         /* noinspection => to suppress warning "Commented out code (n lines)
         runnableExample();
@@ -33,10 +33,10 @@ public class MainFIExamples {
     }
 
     private static int compare(Integer a, Integer b) {
-        if (a < b){
+        if (a < b) {
             return 1;
         }
-        if (a.equals(b)){
+        if (a.equals(b)) {
             return 0;
         }
         return -1;
@@ -50,7 +50,7 @@ public class MainFIExamples {
 
     private static void runBehavior() {
         var i = 0;
-        while (i++ != 100){
+        while (i++ != 100) {
             System.out.println("Llamada a run() Nº: " + i);
         }
     }
@@ -62,14 +62,13 @@ public class MainFIExamples {
             Future<String> future = executor.submit(MainFIExamples::operation);
             System.out.println(future.get());
             executor.shutdown();
-        }
-        catch (InterruptedException | ExecutionException e) {
+        } catch (InterruptedException | ExecutionException e) {
             throw new RuntimeException(e);
         }
     }
 
     private static String operation() {
-        Character[] charArray = new Character[]{'S','o','y',' ','u','n','a',' ','c','a','d','e','n','a'};
+        Character[] charArray = new Character[]{'S', 'o', 'y', ' ', 'u', 'n', 'a', ' ', 'c', 'a', 'd', 'e', 'n', 'a'};
         var strBuffer = new StringBuffer("Recomponiendo cadena: ");
 
         Arrays.stream(charArray).forEach(character -> {
