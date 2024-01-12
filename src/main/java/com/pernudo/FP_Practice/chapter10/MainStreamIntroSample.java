@@ -3,6 +3,7 @@ package com.pernudo.FP_Practice.chapter10;
 import com.pernudo.FP_Practice.pojos.Character;
 import com.pernudo.FP_Practice.utils.CharactersFromJson;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.IntConsumer;
@@ -11,7 +12,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class MainStreamIntroSample {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         List<Character> lstCharacters = CharactersFromJson.getStarTrekCharacters();
         lstCharacters.forEach(System.out::println);
         System.out.println("----------Arrays----------");

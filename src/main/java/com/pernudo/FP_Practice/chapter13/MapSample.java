@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 
 public class MapSample {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
 
         //Lista de listas de Characters, la aplanamos e imprimimos.
         var lstComplete = new ArrayList<List<Character>>();

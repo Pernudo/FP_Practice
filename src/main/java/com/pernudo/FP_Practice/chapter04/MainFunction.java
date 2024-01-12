@@ -1,5 +1,7 @@
 package com.pernudo.FP_Practice.chapter04;
 
+import com.pernudo.FP_Practice.pojos.Person;
+
 import java.time.LocalDate;
 import java.util.function.Function;
 

@@ -3,11 +3,12 @@ package com.pernudo.FP_Practice.chapter11;
 import com.pernudo.FP_Practice.pojos.Character;
 import com.pernudo.FP_Practice.utils.CharactersFromJson;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FilterStreamMain {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         List<Character> lstCharacters = CharactersFromJson.getStarTrekCharacters();
         lstCharacters.forEach(System.out::println);
 

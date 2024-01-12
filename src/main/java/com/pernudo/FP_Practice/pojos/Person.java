@@ -1,4 +1,4 @@
-package com.pernudo.FP_Practice.chapter04;
+package com.pernudo.FP_Practice.pojos;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

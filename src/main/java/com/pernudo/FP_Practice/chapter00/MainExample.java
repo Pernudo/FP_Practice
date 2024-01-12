@@ -13,6 +13,10 @@ public class MainExample {
         printResultOfThis(this::division);
     }
 
+    public static void main(String[] args) {
+        new MainExample();
+    }
+
     private float multiplication() {
         return 3.4f * 5;
     }
@@ -23,9 +27,5 @@ public class MainExample {
 
     private void printResultOfThis(Operation operation) {
         System.out.println("Valor de la operación: " + operation.operation());
-    }
-
-    public static void main(String[] args) {
-        new MainExample();
     }
 }

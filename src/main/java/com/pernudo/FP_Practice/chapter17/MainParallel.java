@@ -15,7 +15,7 @@ public class MainParallel {
     private static long diffPar;
     private static long diffSec;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println("Cargar los datos? [Y/?]");
 
         if (scanner.nextLine().equalsIgnoreCase(YES)) {

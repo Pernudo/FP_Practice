@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 
 public class MainNumberResult {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         var lstProducts = ProductJavaFaker.getList(200);
 

@@ -14,7 +14,7 @@ public class MainReduce {
     public static final String TIPOS_DE_MATERIALES = "Tipos de Materiales: ";
     private static final Set<String> setOfThread = new HashSet<>();
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         var lstProducts = ProductJavaFaker.getList(200);
 
         System.out.println("Reduce Simple ->" + lstProducts.stream()

@@ -3,6 +3,7 @@ package com.pernudo.FP_Practice.chapter12;
 import com.pernudo.FP_Practice.pojos.Character;
 import com.pernudo.FP_Practice.utils.CharactersFromJson;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
@@ -11,7 +12,7 @@ public class MatchSample {
 
     private static final String regexLetter = "[a-zA-Z]{3,}";
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         List<Character> lstCharacters = CharactersFromJson.getStarTrekCharacters();
 
         var pattern = Pattern.compile(regexLetter);

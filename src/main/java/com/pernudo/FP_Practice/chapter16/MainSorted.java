@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 public class MainSorted {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         var lstProducts = ProductJavaFaker.getList(200);
 

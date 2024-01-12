@@ -15,7 +15,7 @@ public class MainFind {
     private static final float MIN_PRICE_LIMIT = 10;
     private static final float MAX_PRICE_LIMIT = 70;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         var lstProducts = ProductJavaFaker.getList(1000);
 
         //Si el precio está entre X eY, el material es Hierro o Plástico
