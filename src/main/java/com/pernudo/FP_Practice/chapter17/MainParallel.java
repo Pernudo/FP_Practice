@@ -5,7 +5,6 @@ import com.pernudo.FP_Practice.utils.ProductJavaFaker;
 
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 public class MainParallel {
 
@@ -20,8 +19,7 @@ public class MainParallel {
         System.out.println("Cargar los datos? [Y/N]");
 
         if (scanner.nextLine().equalsIgnoreCase(YES)) {
-            lstProducts = Stream.generate(ProductJavaFaker::createProduct)
-                    .limit(100000).toList();
+            lstProducts = ProductJavaFaker.getList(100000);
             System.out.println("Datos cargados. Tamaño actual le da lista: " + lstProducts.size());
 
             System.out.println("Mostrar lo que tarda en realizar las operaciones? [Y/N]");

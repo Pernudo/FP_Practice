@@ -4,14 +4,12 @@ import com.pernudo.FP_Practice.pojos.Product;
 import com.pernudo.FP_Practice.utils.ProductJavaFaker;
 
 import java.util.Comparator;
-import java.util.stream.Stream;
 
 public class MainSorted {
 
     public static void main(String[] args) throws Exception {
 
-        var lstProducts = Stream.generate(ProductJavaFaker::createProduct)
-                .limit(200).toList();
+        var lstProducts = ProductJavaFaker.getList(200);
 
         //Ordenamos por el método compareTo de Product extendido de Comparable
         lstProducts.stream()

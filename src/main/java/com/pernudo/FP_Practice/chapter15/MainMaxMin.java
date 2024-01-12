@@ -6,14 +6,12 @@ import com.pernudo.FP_Practice.utils.ProductJavaFaker;
 import java.text.DecimalFormat;
 import java.util.Comparator;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 public class MainMaxMin {
 
     public static void main(String[] args) throws Exception {
 
-        var lstProducts = Stream.generate(ProductJavaFaker::createProduct)
-                .limit(200).toList();
+        var lstProducts = ProductJavaFaker.getList(200);
 
         Comparator<? super Product> comparator = (p1, p2) -> p1.getName().compareToIgnoreCase(p2.getName());
         var max = lstProducts.stream()

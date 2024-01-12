@@ -15,8 +15,7 @@ public class MainReduce {
     private static final Set<String> setOfThread = new HashSet<>();
 
     public static void main(String[] args) throws Exception {
-        var lstProducts = Stream.generate(ProductJavaFaker::createProduct)
-                .limit(200).toList();
+        var lstProducts = ProductJavaFaker.getList(200);
 
         System.out.println("Reduce Simple ->" + lstProducts.stream()
                 .map(product -> product.getMaterial().concat(SEPARATOR))
