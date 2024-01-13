@@ -5,8 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.github.javafaker.Commerce;
 import com.github.javafaker.Faker;
-import com.pernudo.FP_Practice.chapter26.ProductDto;
 import com.pernudo.FP_Practice.pojos.Product;
+import com.pernudo.FP_Practice.pojos.ProductDto;
 
 import java.time.ZoneId;
 import java.util.List;

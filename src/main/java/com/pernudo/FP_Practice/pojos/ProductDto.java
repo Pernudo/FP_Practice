@@ -1,6 +1,5 @@
-package com.pernudo.FP_Practice.chapter26;
+package com.pernudo.FP_Practice.pojos;
 
-import com.pernudo.FP_Practice.pojos.Product;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

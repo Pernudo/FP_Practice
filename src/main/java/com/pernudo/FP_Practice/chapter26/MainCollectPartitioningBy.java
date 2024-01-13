@@ -1,6 +1,7 @@
 package com.pernudo.FP_Practice.chapter26;
 
 import com.pernudo.FP_Practice.pojos.Product;
+import com.pernudo.FP_Practice.pojos.ProductDto;
 import com.pernudo.FP_Practice.utils.ProductJavaFaker;
 
 import java.util.List;
