@@ -1,8 +1,5 @@
 package com.pernudo.FP_Practice.chapter24;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
 import com.pernudo.FP_Practice.pojos.Product;
 import com.pernudo.FP_Practice.utils.ProductJavaFaker;
 
@@ -52,7 +49,7 @@ public class MainCollectToMap {
         Supplier<Map<String, List<Product>>> supplier = HashMap::new;
         Map<String, List<Product>> map = lstProducts.stream()
                 .collect(Collectors.toMap(Product::getMaterial, valueMap, merge, supplier));
-        
+
         map.get("Plastic").forEach(System.out::println);
     }
 
@@ -77,17 +74,9 @@ public class MainCollectToMap {
 
     private static void simple() {
         //Clave -> Product | Valor -> Json
-        ObjectWriter ow = new ObjectMapper().findAndRegisterModules().writer().withDefaultPrettyPrinter();
-
         Map<Product, String> map = lstProducts.stream()
                 .limit(5)
-                .collect(Collectors.toMap(Function.identity(), product -> {
-                    try {
-                        return ow.writeValueAsString(product);
-                    } catch (JsonProcessingException e) {
-                        throw new RuntimeException(e);
-                    }
-                }));
+                .collect(Collectors.toMap(Function.identity(), ProductJavaFaker::productToJson));
         System.out.println(map.get(lstProducts.get(0)));
     }
 }

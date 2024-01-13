@@ -1,5 +1,8 @@
 package com.pernudo.FP_Practice.utils;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 import com.github.javafaker.Commerce;
 import com.github.javafaker.Faker;
 import com.pernudo.FP_Practice.pojos.Product;
@@ -14,6 +17,7 @@ import java.util.stream.Stream;
 public class ProductJavaFaker {
 
     private static final Commerce productFaker = new Faker(new Locale("es", "ES")).commerce();
+    private static final ObjectWriter objectWriter = new ObjectMapper().findAndRegisterModules().writer().withDefaultPrettyPrinter();
 
     public static List<Product> getList(int limit) {
         return Stream.generate(ProductJavaFaker::createProduct)
@@ -30,6 +34,14 @@ public class ProductJavaFaker {
         var price = productFaker.price().replace(',', '.');
         return new Product(productFaker.productName(),
                 productFaker.material(), productFaker.promotionCode(), Float.parseFloat(price), date);
+    }
+
+    public static String productToJson(Product product) {
+        try {
+            return objectWriter.writeValueAsString(product);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
