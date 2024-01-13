@@ -1,7 +1,8 @@
 # Functional::Programming
 
-[Course Playlist](https://www.youtube.com/playlist?list=PLjJ8HhsSfskiDEwgfyF9EznmrSyEukcJa)
-[Course Repo](https://github.com/Javi3Code/YTCourse_Java-Functional-Programming)
+[Playlist del Curso](https://www.youtube.com/playlist?list=PLjJ8HhsSfskiDEwgfyF9EznmrSyEukcJa)
+
+[Reposotorio del Curso](https://github.com/Javi3Code/YTCourse_Java-Functional-Programming)
 
 ## Interfaces funcionales principales presentadas en JDK
 
