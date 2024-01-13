@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.github.javafaker.Commerce;
 import com.github.javafaker.Faker;
+import com.pernudo.FP_Practice.chapter26.ProductDto;
 import com.pernudo.FP_Practice.pojos.Product;
 
 import java.time.ZoneId;
@@ -39,6 +40,14 @@ public class ProductJavaFaker {
     public static String productToJson(Product product) {
         try {
             return objectWriter.writeValueAsString(product);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static String productDtoToJson(ProductDto productDto) {
+        try {
+            return objectWriter.writeValueAsString(productDto);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
