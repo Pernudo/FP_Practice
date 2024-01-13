@@ -53,6 +53,13 @@
             <version>2.2</version>
         </dependency>
 
+        <!-- jmh es un arnés de Java para crear, ejecutar y analizar puntos de referencia nano/micro/macro escritos en Java y otros lenguajes dirigidos a la JVM. -->
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>1.37</version>
+        </dependency>
+
     </dependencies>
 
     <build>
